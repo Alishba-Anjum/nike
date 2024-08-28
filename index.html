@@ -1,86 +1,99 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="icon" href="nike-removebg-preview.png">
     <title>NIKE</title>
-    <link rel="stylesheet"  href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
     <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css"
+        integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg=="
+        crossorigin="anonymous" referrerpolicy="no-referrer" />
 </head>
+
 <body>
+
+    <!-- navigation bar -->
     <nav>
         <div class="logo ">
             <img class="animate__animated animate__backInLeft" src="nike-removebg-preview.png" alt="">
         </div>
-        
+
         <div class="home-btn animate__animated animate__backInRight">
             <a href="">MENU</a>
             <a href="">LOCATION</a>
             <a href="">ABOUT</a>
             <a href="">CONTACT</a>
         </div>
-        
+
         <div class="login-btn">
             <button>Login</button>
         </div>
-        <div  id="menu">
+        <div id="menu">
             <i onclick="mobileVeiw()" class="fa-solid fa-bars"></i>
         </div>
-        </nav>
-        <div class="mobile-veiw">
-            <div onclick="cancel()" class="cancel">
-                <i class="fa-solid fa-xmark"></i>
-            </div>
-            <div class="mobile-home-btn">
-                <a href="">MENU</a>
-                <a href="">LOCATION</a>
-                <a href="">ABOUT</a>
-                <a href="">CONTACT</a>
-            </div>
-            
-            <div class="mobile-login-btn">
-                <button>Login</button>
-            </div>
+    </nav>
+
+              <!-- mobile-view navigation -->
+
+    <div class="mobile-veiw">
+        <div onclick="cancel()" class="cancel">
+            <i class="fa-solid fa-xmark"></i>
         </div>
-        <div class="container main-container">
-            <div class="section1">
-                <h1 class=" animate__animated animate__backInLeft" >YOUR FEET <br> DESERVE <br> THE BEST</h1>
-                <P style="width: 340px;">YOUR FEET DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR SHOES. YOUR FEET DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR SHOES.</P>
-                <div class="btn animate__animated animate__backInLeft">
-                    <div class="shop-now">
-                        <button>Shop Now</button>
-                    </div>
-                    <div class="catagory">
-                        <button>Category</button>
-                    </div>
-                   
+        <div class="mobile-home-btn">
+            <a href="">MENU</a>
+            <a href="">LOCATION</a>
+            <a href="">ABOUT</a>
+            <a href="">CONTACT</a>
+        </div>
+
+        <div class="mobile-login-btn">
+            <button>Login</button>
+        </div>
+    </div>
+
+                  <!-- main container -->
+    <div class="container main-container">
+        <div class="section1">
+            <h1 class=" animate__animated animate__backInLeft">YOUR FEET <br> DESERVE <br> THE BEST</h1>
+            <P style="width: 340px;">YOUR FEET DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR SHOES. YOUR FEET
+                DESERVE THE BEST AND WE'RE HERE TO HELP YOU WITH OUR SHOES.</P>
+            <div class="btn animate__animated animate__backInLeft">
+                <div class="shop-now">
+                    <button>Shop Now</button>
                 </div>
-                
-               <footer>
+                <div class="catagory">
+                    <button>Category</button>
+                </div>
+
+            </div>
+
+            <footer>
                 <p>Also Available On</p>
-                <div class="icons">                
+                <div class="icons">
                     <img src="flipcart-removebg-preview (1).png" style="height: 50px;" alt="">
                     <img src="amazon-removebg-preview.png" style="height: 60px;" alt="">
                 </div>
-               </footer>
-            </div>
-            <div class="section2 col ">
-                <img class=" animate__animated animate__backInRight" src="shoes-removebg-preview.png" alt="">
-            </div>
+            </footer>
         </div>
-        <script>
-            let menu = document.querySelector(".mobile-veiw")
+        <div class="section2 col ">
+            <img class=" animate__animated animate__backInRight" src="shoes-removebg-preview.png" alt="">
+        </div>
+    </div>
 
-           function mobileVeiw(){
+      <!-- javascript -->
+    <script>
+        let menu = document.querySelector(".mobile-veiw")
+
+        function mobileVeiw() {
             menu.style.display = "block";
-           }
-           function cancel(){
+        }
+        function cancel() {
             menu.style.display = "none"
-           }
-        </script>
+        }
+    </script>
 </body>
+
 </html>
-
-

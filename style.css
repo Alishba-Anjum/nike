@@ -1,403 +1,148 @@
- *{
- margin: 0;
- padding: 0;
- box-sizing: border-box;
- font-family: sans-serif;
- }
- 
- html, body {
- height: 100%;
- width: 100%;
- }
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: sans-serif;
+}
 
-nav{
-    height: 80px;
-    width: 100%;
-    display: flex;
-    align-items: center;
-    justify-content: space-around;
-    gap: 250px;
-    padding: 0 70px;
-   
+html,
+body {
+  height: 100%;
+  width: 100%;
 }
-.logo img{
-    height: 70px;
-    width: 120px;
-    padding-top: 15px;
-}
-.home-btn{
-    width: 600px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 35px;
-}
-.home-btn a{
-    text-decoration: none;
 
-    color: black;
-    font-weight: 500;
+nav {
+  height: 80px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  gap: 250px;
+  padding: 0 70px;
 }
-.login-btn button{
-   padding: 5px 15px;
-   background-color: rgb(225, 16, 16);
-   color: white;
-   border: none;
-   font-size: 17px;
-   font-weight: 600;
+.logo img {
+  height: 70px;
+  width: 120px;
+  padding-top: 15px;
 }
-#menu{
-    display: none;
+.home-btn {
+  width: 600px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 35px;
 }
-.main-container{
-    width: 100%;
-    height: calc(100% - 80px);
-   margin: auto;
-    flex-wrap: wrap;
-    display: flex;
+.home-btn a {
+  text-decoration: none;
 
-}
-.section1{
-    width: 55%;
-    height: 100%;
-    background-color: white;
-    padding-left: 16%;
-    display: flex;
-    flex-direction: column;
-    gap: 25px;
-}
-.section1 h1{
-    font-size: 90px;
-    font-weight: 900;
-    line-height: 90px;
-}
-.section1 p{
-    font-size: 14px;
-    line-height: 23px;
-    width: 150px;
-}
-.btn{
-    display: flex;
-    gap: 30px;
-}
-.btn button{
-    padding: 6px 15px;
-}
-.shop-now button{
-    color: white;
-    background-color: rgb(225, 16, 16);
-    border: none;
-}
-.category button
-{
-    color: rgb(94, 89, 89);
-}
-.icons{
-    height: 70px;
-    display: flex;
-    
-    
-    align-items: center;
-
-}
-.section2{
-    width: 45%;
-    height: 100%;
-   
-   
-  
-}
-.section2 img{
-    height: 590px;
-   width: 100%;
-   filter: drop-shadow(30px 10px 4px grey);
- padding-right: 120px; 
-
-   
-}
-a{
-    position: relative;
-}
-  a::after{
- content: "";
- position: absolute;
- left: 0;
- bottom: 0;
- height: 3px;
- width: 0%;
- background-color: rgb(85, 83, 83);
- transition: all ease 1s ;
-}
-a:hover::after{
-    width: 100%;
+  color: black;
+  font-weight: 500;
 }
 .login-btn button {
-    transition: background-color 0.3s ease, padding 0.3s ease;
+  padding: 5px 15px;
+  background-color: rgb(225, 16, 16);
+  color: white;
+  border: none;
+  font-size: 17px;
+  font-weight: 600;
 }
- .login-btn button:hover{
-    background-color: rgb(107, 16, 16);
-    padding: 7px 17px;
+#menu {
+  display: none;
+}
+.main-container {
+  width: 100%;
+  height: calc(100% - 80px);
+  margin: auto;
+  flex-wrap: wrap;
+  display: flex;
+}
+.section1 {
+  width: 55%;
+  height: 100%;
+  background-color: white;
+  padding-left: 16%;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+.section1 h1 {
+  font-size: 90px;
+  font-weight: 900;
+  line-height: 90px;
+}
+.section1 p {
+  font-size: 14px;
+  line-height: 23px;
+  width: 150px;
+}
+.btn {
+  display: flex;
+  gap: 30px;
+}
+.btn button {
+  padding: 6px 15px;
 }
 .shop-now button {
-    transition: background-color 0.3s ease, padding 0.3s ease;
+  color: white;
+  background-color: rgb(225, 16, 16);
+  border: none;
+}
+.category button {
+  color: rgb(94, 89, 89);
+}
+.icons {
+  height: 70px;
+  display: flex;
+
+  align-items: center;
+}
+.section2 {
+  width: 45%;
+  height: 100%;
+}
+.section2 img {
+  height: 590px;
+  width: 100%;
+  filter: drop-shadow(30px 10px 4px grey);
+  padding-right: 120px;
+}
+a {
+  position: relative;
+}
+a::after {
+  content: "";
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  height: 3px;
+  width: 0%;
+  background-color: rgb(85, 83, 83);
+  transition: all ease 1s;
+}
+a:hover::after {
+  width: 100%;
+}
+.login-btn button {
+  transition: background-color 0.3s ease, padding 0.3s ease;
+}
+.login-btn button:hover {
+  background-color: rgb(107, 16, 16);
+  padding: 7px 17px;
+}
+.shop-now button {
+  transition: background-color 0.3s ease, padding 0.3s ease;
 }
 
-.shop-now button:hover{
-    background-color: rgb(137, 28, 28);
-    padding: 9px 19px;
+.shop-now button:hover {
+  background-color: rgb(137, 28, 28);
+  padding: 9px 19px;
 }
-.category button:hover{
-    background-color: rgb(109, 104, 104);
-    padding: 9px 19px;
-}
-
-
-@media (max-width:1000px) {
-    .login-btn, .home-btn{
-        display: none;
-    }
-    #menu{
-        display: block;
-        font-size: 30px;
-    }
-    nav{
-        justify-content: space-between;
-    }
-    .main-container{
-        display: flex;
-        flex-wrap: wrap;
-        
-    }
-    .section1, .section2{
-        width: 100%;
-        height: 50%;
-    }
-    .section1{
-        gap: 20px;
-    }
-    .section2 img{
-        height: 350px;
-        width: 100%;
-    }
-    .section1 h1{
-        font-size: 60px;
-        line-height: 60px;
-    }
+.category button:hover {
+  background-color: rgb(109, 104, 104);
+  padding: 9px 19px;
 }
 
-@media (max-width:800px) {
-    .home-btn{
-     display: none;
-    }
-    .login-btn{
-        display: none;
-       }
-    nav{
-        
-        width: 100%;
-        padding-left: 30px;
-    }
-    #menu{
-        display: block;
-        font-size: 6vw;
-        padding-left: 90px;
-        
-    }
-    .section1{
-        height: 60%;
-        gap: 25px;
-    }
-    .section2{
-        height: 40%;
-    }
-    .section2 img{
-        height: 100%;
-    }
-    .section1 h1{
-        font-size: 50px;
-        font-weight: 900;
-        line-height: 40px;
-    }
-    .logo img{
-        width: 120px;
-        height: 80px;
-        padding-right: 20px;
-    }
-    .main-container{
-        display: flex;
-        flex-wrap: wrap;
-    
-        padding-left: 40px;
-    }
-    .section1 p{
-        font-size: 2vw;
-        line-height: 18px;
-      flex-wrap: wrap;
-    }
-    .section1, .section2{
-        width: 100%;
-        height: 50%;
-    }
-    .btn{
-        gap: 10px;
-    }
-    .btn button{
-        padding: 4px 10px;
-        font-size: 12px;
-    }
-  .icons img{
-    height: 40px;
-  }
-}
-
-
-@media (max-width:500px) {
-    .home-btn{
-     display: none;
-    }
-    .login-btn{
-        display: none;
-       }
-    nav{
-        justify-content: space-between;
-        width: 100%;
-        gap: 10px;
-      
-    }
-    #menu{
-        display: block;
-        font-size: 6vw;
-        
-    }
-    .section1{
-        height: 50%;
-        gap: 15px;
-       
-    }
-    .section2{
-        height: 50%;
-    }
-    .section2 img{
-        height: 100%;
-    }
-    .section1 h1{
-        font-size: 40px;
-        font-weight: 900;
-        line-height: 40px;
-    }
-    .logo img{
-        width: 120px;
-        height: 80px;
-        
-    }
-    .main-container{
-        
-        flex-wrap: wrap;
-    
-        
-    }
-
-    .section1 p{
-        font-size: 2.5vw;
-        line-height: 18px;
-      flex-wrap: wrap;
-      width: 300px !important;
-    }
-    .section1, .section2{
-        width: 100%;
-        height: 50%;
-    }
-    .btn{
-        gap: 10px;
-    }
-    .btn button{
-        padding: 4px 10px;
-        font-size: 12px;
-    }
-  .icons img{
-    height: 40px;
-  }
-}
-
-
-@media (max-width:400px) {
-    .home-btn{
-     display: none;
-    }
-    .login-btn{
-        display: none;
-       }
-    nav{
-        gap: 5px;
-        width: 400px;
-        justify-content: space-between;
-      
-    }
-    #menu{
-        display: block;
-        font-size: 7vw;
-        
-        
-    }
-    .section1{
-        height: 55%;
-        gap: 15px;
-       
-       
-    }
-    .section2{
-        height: 35%;
-        
-        
-    }
-    .section2 img{
-        height: 250px;
-        width: 400px;
-    }
-    .section1 h1{
-        font-size: 35px;
-        font-weight :900;
-        line-height: 38px;
-        
-    }
-    .logo img{
-        width: 120px;
-        height: 70px;
-        
-    }
-    .main-container{
-    padding-left: 20px;
-        flex-wrap: wrap;
-        
-    
-        
-    }
-    .section1 p{
-        font-size: 3vw;
-        line-height: 18px;
-      flex-wrap: wrap;
-      width: 250px !important;
-      font-family: sans-serif;
-    }
-
-    .section1, .section2{
-        width: 100%;
-        
-    }
-    .btn{
-        gap: 10px;
-    }
-    .btn button{
-        padding: 4px 10px;
-        font-size: 12px;
-    }
-  .icons img{
-    height: 40px!important;
-  }
-  
-}
-
-.mobile-veiw{
+.mobile-veiw {
     width: 100%;
     height: 100vh;
     position: absolute;
@@ -406,52 +151,46 @@ a:hover::after{
     display: flex;
     flex-direction: column;
     gap: 50px;
-   
-    
-    
-}
-.mobile-veiw{
+  }
+  .mobile-veiw {
     display: none;
-
+  
     justify-content: center;
-}
-.mobile-home-btn{
+  }
+  .mobile-home-btn {
     display: flex;
     flex-direction: column;
     color: black;
     text-align: center;
     gap: 30px;
     justify-content: space-between;
-   
-}
-.mobile-home-btn a{
+  }
+  .mobile-home-btn a {
     text-decoration: none;
     color: black;
     position: relative;
-}
-.cancel{
+  }
+  .cancel {
     font-size: 30px;
-}
-.mobile-login-btn{
+  }
+  .mobile-login-btn {
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 40px;
-}
-.mobile-login-btn button{
+  }
+  .mobile-login-btn button {
     padding: 5px 25px;
     background-color: red;
     border: none;
     margin-top: 20px;
     text-align: center;
     color: white;
-    
-
-}
-.mobile-home-btn a{
+  }
+  .mobile-home-btn a {
     position: relative;
-}
-.mobile-home-btn a::after{
+  }
+  .mobile-home-btn a::after {
     content: "";
     position: absolute;
     left: 0;
@@ -460,8 +199,234 @@ a:hover::after{
     width: 0%;
     background-color: rgb(76, 67, 67);
     transition: all ease 1s;
-}
-.mobile-home-btn a:hover::after{
+  }
+  .mobile-home-btn a:hover::after {
     width: 20%;
     left: 40%;
+  }
+  
+
+@media (max-width: 1000px) {
+  .login-btn,
+  .home-btn {
+    display: none;
+  }
+  #menu {
+    display: block;
+    font-size: 30px;
+  }
+  nav {
+    justify-content: space-between;
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+  }
+  .section1,
+  .section2 {
+    width: 100%;
+    height: 50%;
+  }
+  .section1 {
+    gap: 20px;
+  }
+  .section2 img {
+    height: 350px;
+    width: 100%;
+  }
+  .section1 h1 {
+    font-size: 60px;
+    line-height: 60px;
+  }
 }
+
+@media (max-width: 800px) {
+  .home-btn {
+    display: none;
+  }
+  .login-btn {
+    display: none;
+  }
+  nav {
+    width: 100%;
+    padding-left: 30px;
+  }
+  #menu {
+    display: block;
+    font-size: 6vw;
+    padding-left: 90px;
+  }
+  .section1 {
+    height: 60%;
+    gap: 25px;
+  }
+  .section2 {
+    height: 40%;
+  }
+  .section2 img {
+    height: 100%;
+  }
+  .section1 h1 {
+    font-size: 50px;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  .logo img {
+    width: 120px;
+    height: 80px;
+    padding-right: 20px;
+  }
+  .main-container {
+    display: flex;
+    flex-wrap: wrap;
+
+    padding-left: 40px;
+  }
+  .section1 p {
+    font-size: 2vw;
+    line-height: 18px;
+    flex-wrap: wrap;
+  }
+  .section1,
+  .section2 {
+    width: 100%;
+    height: 50%;
+  }
+  .btn {
+    gap: 10px;
+  }
+  .btn button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .icons img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 500px) {
+  .home-btn {
+    display: none;
+  }
+  .login-btn {
+    display: none;
+  }
+  nav {
+    justify-content: space-between;
+    width: 100%;
+    gap: 10px;
+  }
+  #menu {
+    display: block;
+    font-size: 6vw;
+  }
+  .section1 {
+    height: 50%;
+    gap: 15px;
+  }
+  .section2 {
+    height: 50%;
+  }
+  .section2 img {
+    height: 100%;
+  }
+  .section1 h1 {
+    font-size: 40px;
+    font-weight: 900;
+    line-height: 40px;
+  }
+  .logo img {
+    width: 120px;
+    height: 80px;
+  }
+  .main-container {
+    flex-wrap: wrap;
+  }
+
+  .section1 p {
+    font-size: 2.5vw;
+    line-height: 18px;
+    flex-wrap: wrap;
+    width: 300px !important;
+  }
+  .section1,
+  .section2 {
+    width: 100%;
+    height: 50%;
+  }
+  .btn {
+    gap: 10px;
+  }
+  .btn button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .icons img {
+    height: 40px;
+  }
+}
+
+@media (max-width: 400px) {
+  .home-btn {
+    display: none;
+  }
+  .login-btn {
+    display: none;
+  }
+  nav {
+    gap: 5px;
+    width: 400px;
+    justify-content: space-between;
+  }
+  #menu {
+    display: block;
+    font-size: 7vw;
+  }
+  .section1 {
+    height: 55%;
+    gap: 15px;
+  }
+  .section2 {
+    height: 35%;
+  }
+  .section2 img {
+    height: 250px;
+    width: 400px;
+  }
+  .section1 h1 {
+    font-size: 35px;
+    font-weight: 900;
+    line-height: 38px;
+  }
+  .logo img {
+    width: 120px;
+    height: 70px;
+  }
+  .main-container {
+    padding-left: 20px;
+    flex-wrap: wrap;
+  }
+  .section1 p {
+    font-size: 3vw;
+    line-height: 18px;
+    flex-wrap: wrap;
+    width: 250px !important;
+    font-family: sans-serif;
+  }
+
+  .section1,
+  .section2 {
+    width: 100%;
+  }
+  .btn {
+    gap: 10px;
+  }
+  .btn button {
+    padding: 4px 10px;
+    font-size: 12px;
+  }
+  .icons img {
+    height: 40px !important;
+  }
+}
+
